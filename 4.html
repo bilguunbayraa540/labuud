@@ -1,0 +1,32 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab5-4</title>
+<script type="text/javascript">
+function calc(){
+	var a=document.getElementById('a').value;
+	var b=document.getElementById('b').value;
+	var c=document.getElementById('c').value;
+	var d=document.getElementById('d').value;
+	x=d/(a*b)+1;
+ 	y=(d-1)%(a*c);
+ 	s=y%(a*c);
+ 	m=s/c+1;
+ 	if (d%c==0) {n=c;} else {n=d%c;}
+ 	document.getElementById('result').value =Math.floor(x);
+	document.getElementById('result2').value =Math.floor(m);
+	document.getElementById('result3').value =Math.floor(n);
+}
+</script>
+</head>
+ <body>
+  <input type="text" id="a"/>
+  <input type="text" id="b"/>
+  <input type="text" id="c"/>
+  <input type="text" id="d"/>
+  <button onclick="calc();">=</button>
+  <input type="text" id="result"/>
+  <input type="text" id="result2"/>
+  <input type="text" id="result3"/>
+</body>
+</html>
